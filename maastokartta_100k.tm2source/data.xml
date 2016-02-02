@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[Maanmittauslaitos]]></Parameter>
+  <Parameter name="center">23.2732,61.4544,12</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"VesiAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number","Korkeus":"Number"}},{"id":"Maasto2Alue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"TaajamaAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"MaaAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"KorkeusViiva","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number","Korkeus":"Number"}},{"id":"PeltoAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"HallintoAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number","Enklaavi":"Number","AVI":"String","Maakunta":"String","Kunta":"String","AVI_ni1":"String","AVI_ni2":"String","Maaku_ni1":"String","Maaku_ni2":"String","Kunta_ni1":"String","Kunta_ni2":"String","Kieli_ni1":"String","Kieli_ni2":"String"}},{"id":"Maasto1Reuna","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"LiikenneAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"SuojaAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"SuojeluAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"AmpumaRaja","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"RakennusAlue","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number","Kerrosluku":"Number"}},{"id":"HallintoalueRaja","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"KaasuJohto","description":"","fields":{"Kohderyhma":"Number","Vertikaali":"Number","Kohdeluokk":"Number"}},{"id":"MetsaRaja","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number","MetsanTyyp":"Number"}},{"id":"RajavyohykeRaja","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"SahkoLinja","description":"","fields":{"Kohderyhma":"Number","Vertikaali":"Number","Kohdeluokk":"Number"}},{"id":"SuojametsaRaja","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"Maasto1Viiva","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"VesiliikenneViiva","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"VesirakennelmaViiva","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"KoskiViiva","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"VesiViiva","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number","Vertikaali":"Number"}},{"id":"KiitotieViiva","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"TieViiva","description":"","fields":{"Kohderyhma":"Number","Vertikaali":"Number","Kohdeluokk":"Number","Tieluokka":"Number","Valmiusast":"Number","Tienumero":"Number","Paallyste":"Number","Ajorataluk":"Number"}},{"id":"RautatieViiva","description":"","fields":{"Kohderyhma":"Number","Vertikaali":"Number","Kohdeluokk":"Number","Valmiusast":"Number","Sahkoistys":"Number","Raideluku":"Number"}},{"id":"RakennusViiva","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"PorttiPiste","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"RautatiePiste","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number","Asematyypp":"Number"}},{"id":"VesirakennelmaPiste","description":"","fields":{"Kohderyhma":"Number","Suunta":"Number","Kohdeluokk":"Number"}},{"id":"TiePiste","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"KoskiPiste","description":"","fields":{"Kohderyhma":"Number","Suunta":"Number","Kohdeluokk":"Number"}},{"id":"RakennusPiste","description":"","fields":{"Kohderyhma":"Number","Suunta":"Number","PintaAla":"Number","Kohdeluokk":"Number","Korkeus":"Number","Kerrosluku":"Number"}},{"id":"MajakkaPiste","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"SahkoPiste","description":"","fields":{"Kohderyhma":"Number","Kohdeluokk":"Number"}},{"id":"KarttanimiPiste","description":"","fields":{"knimiID":"Number","knimiTekst":"String","knimiXP":"Number","knimiYI":"Number","suuntaDXP":"Number","suuntaDYI":"Number","taivutus":"String","kirjTyyppi":"Number","kirjKoko":"Number","kirjVari":"Number","kallistus":"Number","harvennus":"Number","paikkaID":"Number","paikkaTyyp":"Number","paikkaXP":"Number","paikkaYI":"Number","pnimiID":"Number","pnimiTekst":"String","kieliKoodi":"Number","kieliViral":"Number","kieliEnem":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">14</Parameter>
+  <Parameter name="minzoom">11</Parameter>
+  <Parameter name="name"><![CDATA[Maastokartta 100k]]></Parameter>
+</Parameters>
+
+
+<Layer name="VesiAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/VesiAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Maasto2Alue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/Maasto2Alue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="TaajamaAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/TaajamaAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="MaaAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/MaaAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="KorkeusViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/KorkeusViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="PeltoAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/PeltoAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="HallintoAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/HallintoAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Maasto1Reuna"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/Maasto1Reuna.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="LiikenneAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/LiikenneAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="SuojaAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/SuojaAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="SuojeluAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/SuojeluAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="AmpumaRaja"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/AmpumaRaja.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="RakennusAlue"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/RakennusAlue.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="HallintoalueRaja"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/HallintoalueRaja.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="KaasuJohto"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/KaasuJohto.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="MetsaRaja"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/MetsaRaja.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="RajavyohykeRaja"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/RajavyohykeRaja.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="SahkoLinja"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/SahkoLinja.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="SuojametsaRaja"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/SuojametsaRaja.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="Maasto1Viiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/Maasto1Viiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="VesiliikenneViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/VesiliikenneViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="VesirakennelmaViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/VesirakennelmaViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="KoskiViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/KoskiViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="VesiViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/VesiViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="KiitotieViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/KiitotieViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="TieViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/TieViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="RautatieViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/RautatieViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="RakennusViiva"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/RakennusViiva.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="PorttiPiste"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/PorttiPiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="RautatiePiste"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/RautatiePiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="VesirakennelmaPiste"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/VesirakennelmaPiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="TiePiste"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/TiePiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="KoskiPiste"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/KoskiPiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="RakennusPiste"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/RakennusPiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="MajakkaPiste"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/MajakkaPiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="SahkoPiste"
+  buffer-size="8"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/SahkoPiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="KarttanimiPiste"
+  buffer-size="512"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/data/maastokartta_100k/KarttanimiPiste.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

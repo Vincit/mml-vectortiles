@@ -1,0 +1,511 @@
+_prefs: 
+  disabled: 
+    - KarttanimiPiste
+    - SahkoPiste
+    - MajakkaPiste
+    - RakennusPiste
+    - KoskiPiste
+    - TiePiste
+    - VesirakennelmaPiste
+    - RautatiePiste
+    - PorttiPiste
+    - RakennusViiva
+    - TieViiva
+    - KiitotieViiva
+    - VesiViiva
+    - KoskiViiva
+    - VesirakennelmaViiva
+    - VesiliikenneViiva
+    - Maasto1Viiva
+    - SuojametsaRaja
+    - SahkoLinja
+    - RajavyohykeRaja
+    - MetsaRaja
+    - KaasuJohto
+    - HallintoalueRaja
+    - RakennusAlue
+    - AmpumaRaja
+    - LiikenneAlue
+    - Maasto1Reuna
+    - HallintoAlue
+    - PeltoAlue
+    - KorkeusViiva
+    - MaaAlue
+    - TaajamaAlue
+    - Maasto2Alue
+  inspector: false
+  mapid: ''
+  rev: ''
+  saveCenter: false
+attribution: Maanmittauslaitos
+center: 
+  - 23.2732
+  - 61.4544
+  - 12
+description: ''
+Layer: 
+  - id: VesiAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/VesiAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Korkeus: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: Maasto2Alue
+    Datasource: 
+      file: "/data/maastokartta_100k/Maasto2Alue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: TaajamaAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/TaajamaAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: MaaAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/MaaAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: KorkeusViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/KorkeusViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Korkeus: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: PeltoAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/PeltoAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: HallintoAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/HallintoAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      AVI: String
+      AVI_ni1: String
+      AVI_ni2: String
+      Enklaavi: Number
+      Kieli_ni1: String
+      Kieli_ni2: String
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Kunta: String
+      Kunta_ni1: String
+      Kunta_ni2: String
+      Maaku_ni1: String
+      Maaku_ni2: String
+      Maakunta: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: Maasto1Reuna
+    Datasource: 
+      file: "/data/maastokartta_100k/Maasto1Reuna.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: LiikenneAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/LiikenneAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: SuojaAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/SuojaAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: SuojeluAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/SuojeluAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: AmpumaRaja
+    Datasource: 
+      file: "/data/maastokartta_100k/AmpumaRaja.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: RakennusAlue
+    Datasource: 
+      file: "/data/maastokartta_100k/RakennusAlue.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kerrosluku: Number
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: HallintoalueRaja
+    Datasource: 
+      file: "/data/maastokartta_100k/HallintoalueRaja.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: KaasuJohto
+    Datasource: 
+      file: "/data/maastokartta_100k/KaasuJohto.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Vertikaali: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: MetsaRaja
+    Datasource: 
+      file: "/data/maastokartta_100k/MetsaRaja.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      MetsanTyyp: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: RajavyohykeRaja
+    Datasource: 
+      file: "/data/maastokartta_100k/RajavyohykeRaja.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: SahkoLinja
+    Datasource: 
+      file: "/data/maastokartta_100k/SahkoLinja.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Vertikaali: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: SuojametsaRaja
+    Datasource: 
+      file: "/data/maastokartta_100k/SuojametsaRaja.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: Maasto1Viiva
+    Datasource: 
+      file: "/data/maastokartta_100k/Maasto1Viiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: VesiliikenneViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/VesiliikenneViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: VesirakennelmaViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/VesirakennelmaViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: KoskiViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/KoskiViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: VesiViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/VesiViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Vertikaali: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: KiitotieViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/KiitotieViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: TieViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/TieViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Ajorataluk: Number
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Paallyste: Number
+      Tieluokka: Number
+      Tienumero: Number
+      Valmiusast: Number
+      Vertikaali: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: RautatieViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/RautatieViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Raideluku: Number
+      Sahkoistys: Number
+      Valmiusast: Number
+      Vertikaali: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: RakennusViiva
+    Datasource: 
+      file: "/data/maastokartta_100k/RakennusViiva.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: PorttiPiste
+    Datasource: 
+      file: "/data/maastokartta_100k/PorttiPiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: RautatiePiste
+    Datasource: 
+      file: "/data/maastokartta_100k/RautatiePiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      Asematyypp: Number
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: VesirakennelmaPiste
+    Datasource: 
+      file: "/data/maastokartta_100k/VesirakennelmaPiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Suunta: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: TiePiste
+    Datasource: 
+      file: "/data/maastokartta_100k/TiePiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: KoskiPiste
+    Datasource: 
+      file: "/data/maastokartta_100k/KoskiPiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Suunta: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: RakennusPiste
+    Datasource: 
+      file: "/data/maastokartta_100k/RakennusPiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kerrosluku: Number
+      Kohdeluokk: Number
+      Kohderyhma: Number
+      Korkeus: Number
+      PintaAla: Number
+      Suunta: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: MajakkaPiste
+    Datasource: 
+      file: "/data/maastokartta_100k/MajakkaPiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: SahkoPiste
+    Datasource: 
+      file: "/data/maastokartta_100k/SahkoPiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      Kohdeluokk: Number
+      Kohderyhma: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+  - id: KarttanimiPiste
+    Datasource: 
+      file: "/data/maastokartta_100k/KarttanimiPiste.shp"
+      type: shape
+    description: ''
+    fields: 
+      harvennus: Number
+      kallistus: Number
+      kieliEnem: Number
+      kieliKoodi: Number
+      kieliViral: Number
+      kirjKoko: Number
+      kirjTyyppi: Number
+      kirjVari: Number
+      knimiID: Number
+      knimiTekst: String
+      knimiXP: Number
+      knimiYI: Number
+      paikkaID: Number
+      paikkaTyyp: Number
+      paikkaXP: Number
+      paikkaYI: Number
+      pnimiID: Number
+      pnimiTekst: String
+      suuntaDXP: Number
+      suuntaDYI: Number
+      taivutus: String
+    properties: 
+      "buffer-size": 512
+    srs: +proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs
+maxzoom: 14
+minzoom: 5
+name: Maastokartta 100k

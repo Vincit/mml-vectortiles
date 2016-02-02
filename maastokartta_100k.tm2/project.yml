@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ''
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 23.7705
+  - 61.4939
+  - 13
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 16
+minzoom: 12
+name: Maastokartta 100k
+source: "tmsource:///opt/maastokartta_100k.tm2source"
+styles: 
+  - style.mss
+template: ''

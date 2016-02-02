@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs" font-directory="fonts/" background-color="#ffffff" buffer-size="1024">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">23.7705,61.4939,12</Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">16</Parameter>
+  <Parameter name="minzoom">12</Parameter>
+  <Parameter name="name"><![CDATA[Maastokartta 100k]]></Parameter>
+  <Parameter name="source"><![CDATA[tmsource:///opt/maastokartta_100k.tm2source]]></Parameter>
+</Parameters>
+
+
+<Style name="VesiAlue" filter-mode="first">
+  <Rule>
+    <PolygonSymbolizer fill="#80fefe" gamma="0.5" />
+    <LineSymbolizer stroke-width="1" stroke="#0080ff" />
+  </Rule>
+</Style>
+<Layer name="VesiAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>VesiAlue</StyleName>  </Layer>
+
+<Style name="Maasto2Alue" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="#999999" />
+    <PolygonSymbolizer fill="#e6e6e6" />
+  </Rule>
+</Style>
+<Layer name="Maasto2Alue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>Maasto2Alue</StyleName>  </Layer>
+
+<Style name="TaajamaAlue" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#f2daf2" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#f2cef2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="1" />
+  </Rule>
+</Style>
+<Layer name="TaajamaAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>TaajamaAlue</StyleName>  </Layer>
+
+<Style name="MaaAlue" filter-mode="first">
+  <Rule>
+    <Filter>([Kohdeluokk] = 35422)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#c7ebeb" />
+    <PolygonPatternSymbolizer file="img/stripe1.png" alignment="local" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 35421)</Filter>
+    <PolygonSymbolizer fill="#ff0000" />
+    <LineSymbolizer stroke-width="0" />
+    <PolygonPatternSymbolizer file="img/stripe1.png" alignment="local" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 35412)</Filter>
+    <LineSymbolizer stroke-width="0" />
+    <PolygonSymbolizer fill="#c7ebeb" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 35411)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#d1cc40" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 34700)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ff0000" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 34300)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ff0000" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 34100)</Filter>
+    <LineSymbolizer stroke-width="0" />
+    <PolygonSymbolizer fill="#d1c7d1" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 33100)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#e6ff80" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 33000)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ffffd9" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32900)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#b3ff66" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32500)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ffffd9" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32300)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ffffd9" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32200)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#80ff80" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32113)</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="1" />
+    <PolygonSymbolizer fill="#d1cc40" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32112)</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="1" />
+    <PolygonSymbolizer fill="#d1cc40" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32111)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#fefed8" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ff0000" />
+  </Rule>
+</Style>
+<Layer name="MaaAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>MaaAlue</StyleName>  </Layer>
+
+<Style name="KorkeusViiva" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="2" stroke="#bd7d39" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="#a64d00" />
+  </Rule>
+</Style>
+<Layer name="KorkeusViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>KorkeusViiva</StyleName>  </Layer>
+
+<Style name="PeltoAlue" filter-mode="first">
+  <Rule>
+    <Filter>([Kohdeluokk] = 32800)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#fff266" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32612)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ffd980" />
+    <PolygonPatternSymbolizer file="img/trees-z.png" alignment="local" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 32611)</Filter>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ffd980" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="1" />
+  </Rule>
+</Style>
+<Layer name="PeltoAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>PeltoAlue</StyleName>  </Layer>
+
+<Layer name="HallintoAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+      </Layer>
+
+<Style name="Maasto1Reuna" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="#ab5600" />
+  </Rule>
+</Style>
+<Layer name="Maasto1Reuna"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>Maasto1Reuna</StyleName>  </Layer>
+
+<Style name="LiikenneAlue" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" />
+    <PolygonSymbolizer fill="#ffb280" />
+  </Rule>
+</Style>
+<Layer name="LiikenneAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>LiikenneAlue</StyleName>  </Layer>
+
+<Style name="SuojaAlue" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="rgba(68, 255, 90, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="SuojaAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>SuojaAlue</StyleName>  </Layer>
+
+<Style name="SuojeluAlue-outline" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="2" offset="3" stroke="#05b405" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="3" offset="4" stroke="#05b405" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+</Style>
+<Style name="SuojeluAlue-inset" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="6" stroke-dasharray="1, 2" stroke="#32c232" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="8" stroke-dasharray="2, 4" stroke="#05b405" />
+  </Rule>
+</Style>
+<Layer name="SuojeluAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>SuojeluAlue-inset</StyleName>
+    <StyleName>SuojeluAlue-outline</StyleName>  </Layer>
+
+<Style name="AmpumaRaja" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(204, 136, 68, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="AmpumaRaja"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>AmpumaRaja</StyleName>  </Layer>
+
+<Style name="RakennusAlue" filter-mode="first">
+  <Rule>
+    <Filter>([Kohdeluokk] = 42264)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#cc00cc" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 42270)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#cc00cc" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 42253)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#cc00cc" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 42243)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#cc00cc" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 42233)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#cc00cc" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 42223)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#cc00cc" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 42213)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#cc00cc" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <PolygonSymbolizer fill="#cc00cc" />
+  </Rule>
+</Style>
+<Layer name="RakennusAlue"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>RakennusAlue</StyleName>  </Layer>
+
+<Style name="HallintoalueRaja" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 84113)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#4d00ff" stroke-dasharray="10, 2, 2, 3, 2, 3" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 84113)</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#4d00ff" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 84115)</Filter>
+    <LineSymbolizer stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 84112)</Filter>
+    <LineSymbolizer stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 84111)</Filter>
+    <LineSymbolizer stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 82100)</Filter>
+    <LineSymbolizer stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-linecap="round" />
+  </Rule>
+</Style>
+<Layer name="HallintoalueRaja"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>HallintoalueRaja</StyleName>  </Layer>
+
+<Style name="KaasuJohto" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="#00ffff" />
+  </Rule>
+</Style>
+<Layer name="KaasuJohto"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>KaasuJohto</StyleName>  </Layer>
+
+<Style name="MetsaRaja" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke="rgba(68, 170, 68, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="MetsaRaja"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>MetsaRaja</StyleName>  </Layer>
+
+<Style name="RajavyohykeRaja" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(255, 153, 136, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="RajavyohykeRaja"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>RajavyohykeRaja</StyleName>  </Layer>
+
+<Style name="SahkoLinja" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
+  </Rule>
+</Style>
+<Layer name="SahkoLinja"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>SahkoLinja</StyleName>  </Layer>
+
+<Style name="SuojametsaRaja" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="20" stroke="rgba(68, 255, 90, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="SuojametsaRaja"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>SuojametsaRaja</StyleName>  </Layer>
+
+<Style name="Maasto1Viiva" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke="#ab5600" />
+  </Rule>
+</Style>
+<Layer name="Maasto1Viiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>Maasto1Viiva</StyleName>  </Layer>
+
+<Style name="VesiliikenneViiva" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="#5d77bd" />
+  </Rule>
+</Style>
+<Layer name="VesiliikenneViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>VesiliikenneViiva</StyleName>  </Layer>
+
+<Style name="VesirakennelmaViiva" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(153, 68, 136, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="VesirakennelmaViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>VesirakennelmaViiva</StyleName>  </Layer>
+
+<Style name="KoskiViiva" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(255, 170, 238, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="KoskiViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>KoskiViiva</StyleName>  </Layer>
+
+<Style name="VesiViiva" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="2" stroke="#2591ff" />
+  </Rule>
+</Style>
+<Layer name="VesiViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>VesiViiva</StyleName>  </Layer>
+
+<Style name="KiitotieViiva" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(238, 153, 221, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="KiitotieViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>KiitotieViiva</StyleName>  </Layer>
+
+<Style name="TieViiva-fill" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 12111)</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#c70000" />
+  </Rule>
+</Style>
+<Style name="TieViiva-case" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 12111)</Filter>
+    <LineSymbolizer stroke-width="6" stroke="#333333" />
+  </Rule>
+</Style>
+<Style name="TieViiva" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 12141)</Filter>
+    <LineSymbolizer stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 12141)</Filter>
+    <LineSymbolizer stroke="#c70000" stroke-width="0" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 12132)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#c70000" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 12132)</Filter>
+    <LineSymbolizer stroke="#c70000" stroke-width="0" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 12131)</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#c70000" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 12131)</Filter>
+    <LineSymbolizer stroke="#c70000" stroke-width="0" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 12122)</Filter>
+    <LineSymbolizer stroke-width="4" stroke="#c70000" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 12122)</Filter>
+    <LineSymbolizer stroke="#c70000" stroke-width="0" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 12121)</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#c70000" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 12121)</Filter>
+    <LineSymbolizer stroke="#c70000" stroke-width="0" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 12111)</Filter>
+    <LineSymbolizer stroke-width="6" stroke="#c70000" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([Kohdeluokk] = 12111)</Filter>
+    <LineSymbolizer stroke="#c70000" stroke-width="0" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <Filter>([Kohdeluokk] = 12112)</Filter>
+    <LineSymbolizer stroke-width="5" stroke="#c70000" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke="#c70000" stroke-width="0" stroke-linecap="round" stroke-linejoin="miter" />
+  </Rule>
+</Style>
+<Layer name="TieViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>TieViiva</StyleName>
+    <StyleName>TieViiva-case</StyleName>
+    <StyleName>TieViiva-fill</StyleName>  </Layer>
+
+<Style name="RautatieViiva-dash" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke="#99e0ff" stroke-width="2.5" stroke-dasharray="6, 6" />
+  </Rule>
+</Style>
+<Style name="RautatieViiva-line" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="5" stroke="#333333" />
+  </Rule>
+</Style>
+<Style name="RautatieViiva" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="3" stroke="#333333" />
+  </Rule>
+</Style>
+<Layer name="RautatieViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>RautatieViiva</StyleName>
+    <StyleName>RautatieViiva-line</StyleName>
+    <StyleName>RautatieViiva-dash</StyleName>  </Layer>
+
+<Layer name="RakennusViiva"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+      </Layer>
+
+<Style name="PorttiPiste" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(119, 102, 68, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="PorttiPiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>PorttiPiste</StyleName>  </Layer>
+
+<Layer name="RautatiePiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+      </Layer>
+
+<Style name="VesirakennelmaPiste" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(218, 20, 210, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="VesirakennelmaPiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>VesirakennelmaPiste</StyleName>  </Layer>
+
+<Style name="TiePiste" filter-mode="first">
+  <Rule>
+    <TextSymbolizer face-name="Source Sans Pro Bold" fill="#000000" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="TiePiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>TiePiste</StyleName>  </Layer>
+
+<Style name="KoskiPiste" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(255, 119, 85, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="KoskiPiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>KoskiPiste</StyleName>  </Layer>
+
+<Style name="RakennusPiste" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 45500)</Filter>
+    <MarkersSymbolizer fill="#00b300" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 45800)</Filter>
+    <MarkersSymbolizer fill="#000000" width="11" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 45300)</Filter>
+    <MarkersSymbolizer fill="#ffffff" stroke="#000000" stroke-width="1" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 44800)</Filter>
+    <MarkersSymbolizer fill="#000000" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 42264)</Filter>
+    <MarkersSymbolizer fill="#000000" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 42270)</Filter>
+    <MarkersSymbolizer fill="#00b300" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 42253)</Filter>
+    <MarkersSymbolizer fill="#00b300" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 42243)</Filter>
+    <MarkersSymbolizer fill="#000000" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 42233)</Filter>
+    <MarkersSymbolizer fill="#00b300" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 42223)</Filter>
+    <MarkersSymbolizer fill="#00b300" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([Kohdeluokk] = 42213)</Filter>
+    <MarkersSymbolizer fill="#00b300" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MarkersSymbolizer fill="#ff0000" opacity="0.9" allow-overlap="true" placement="point" marker-type="ellipse" width="7" stroke-width="1" stroke="#ffffff" stroke-opacity="0.9" />
+  </Rule>
+</Style>
+<Layer name="RakennusPiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>RakennusPiste</StyleName>  </Layer>
+
+<Style name="MajakkaPiste" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(85, 85, 255, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="MajakkaPiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>MajakkaPiste</StyleName>  </Layer>
+
+<Layer name="SahkoPiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+      </Layer>
+
+<Style name="KarttanimiPiste" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="6*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="5*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer size="6*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer size="5*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="6*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="5*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer size="6*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer size="5*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="6*[kirjKoko]/100" fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="5*[kirjKoko]/100" fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560)</Filter>
+    <TextSymbolizer size="6*[kirjKoko]/100" face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560)</Filter>
+    <TextSymbolizer size="5*[kirjKoko]/100" face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([paikkaTyyp] &gt;= 540) and ([paikkaTyyp] &lt;= 560)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([paikkaXP] &gt; 1) and ([knimiXP] &gt; 1)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([kirjTyyppi] = 20) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Bold" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([kirjTyyppi] = 20)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Bold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([kirjTyyppi] = 10) and ([kirjVari] = 55)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Regular" fill="#0046ff" halo-fill="#ffffff" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([kirjTyyppi] = 10)</Filter>
+    <TextSymbolizer face-name="Source Sans Pro Regular" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <Filter>([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="11*[kirjKoko]/100" fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([kirjVari] = 55)</Filter>
+    <TextSymbolizer size="8*[kirjKoko]/100" fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([kirjVari] = 55)</Filter>
+    <TextSymbolizer fill="#0046ff" halo-fill="#ffffff" face-name="Source Sans Pro Regular" character-spacing="-2" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <TextSymbolizer size="11*[kirjKoko]/100" face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <TextSymbolizer size="8*[kirjKoko]/100" face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA[[knimiTekst]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <TextSymbolizer face-name="Source Sans Pro Semibold" fill="#000000" character-spacing="-2" halo-fill="#ffffff" halo-radius="0.5" halo-rasterizer="fast" minimum-distance="5" placement-type="simple" placements="E" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="KarttanimiPiste"
+  srs="+proj=utm +zone=35 +ellps=GRS80 +units=m +no_defs">
+    <StyleName>KarttanimiPiste</StyleName>  </Layer>
+
+</Map>

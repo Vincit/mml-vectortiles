@@ -1,0 +1,13 @@
+{
+  "tilePath": "/{z}/{x}/{y}.{format}",
+  "/": {
+    "source": "tmstyle:///opt/maastokartta_100k.tm2/",
+    "cors": false,
+    "timing": true,
+    "headers": {
+      "Cache-Control": "public,max-age={{#tileJSON}}86400{{/tileJSON}}{{#tile}}3600{{/tile}}",
+      "Surrogate-Control": "max-age=86400",
+      "Surrogate-Keys": "{{#tile}}z{{zoom}} x{{x}} y{{y}}{{/tile}}"
+    }
+  }
+}
